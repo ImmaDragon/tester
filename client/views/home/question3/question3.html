@@ -1,24 +1,31 @@
+
+
 <template name="question3">
-  <div class="question3">
-    <div class="main-container">
-	  	<div class="game-container">
-	  	 	<div class="game-content">
-		  		 <h1 class="todaysdate">Please click on the</h1>	
-		  		  <h1 class="todaysdate"> {{random_color}} circle</h1><br/>
+<div class="question1">
+<div class="main-container">
+  <div class="game-container">
+    <i class="fa fa-calendar"></i>
+    <h1 class="todaysdate">
+      <strong>This is a list of top teammember of that team</strong>
+      <br>
+      <strong>This is your favorite teammember</strong>
+    </h1>
 
-		  		<div>
-			        <div class="clickedButton1"></div>
-			        <div class="clickedButton2"></div>
-			        <div class="clickedButton3"></div>
-			        <div class="clickedButton4"></div>
-			        <div class="clickedButton5"></div>
-	    		</div>
-	    	</div>
+    <form class="form-inline">
+        <p>MVP</p>
+        <img src="/images/blue.png" class="btn-one">
+        <img src="/images/blue.png" class="btn-two">
+        <img src="/images/blue.png" class="btn-three">
+        <br>
+        <p>favorite</p>
+        <img src="/images/blue.png" class="btn-four">
+    </form>
 
-	     <button class="next-btn" id="question4">Next <i class="fa fa-angle-right"></i></button>	
-		</div>
-		 <div class="score-popup">+100</div>
-		 <div class="score-popup-zero">0</div>
-	 </div>
+    <div class="todaysdate">
+	    <button class="next-btn" id="question2">Next <i class="fa fa-angle-right"></i></button>
+	  </div>
+
   </div>
+ </div>
+</div>
 </template>

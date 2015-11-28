@@ -14,7 +14,7 @@ Transitioner.transition({
 
  //insert to the data base
     Template.home.events({
-        'click #question2': function() {
+        'click #home': function() {
             var day = $("#day").val();
             var month = $("#month").val();
             var year = $("#year").val();
@@ -53,48 +53,63 @@ Transitioner.transition({
             Router.go('/question2');
 
         },
-
-        Template.home.events({
-
             //if button 1 is clicked. save the session and --> Router.go('/question2')
-    'click .clickedButton1': function() {
+    'click .btn-one': function() {
       //if clicked, return the color
       Session.set('var1', 1);
+      var getVar =Session.get('var1');
+      console.log(getVar);
       Router.go('/question2');
     },
-    'click .clickedButton2': function() {
+    'click .btn-two': function() {
       //if clicked, return the color
       Session.set('var2', 1);
+      var getVar =Session.get('var2');
+      console.log(getVar);
       Router.go('/question2');
     },
-    'click .clickedButton3': function() {
+    'click .btn-three': function() {
       //if clicked, return the color
       Session.set('var3', 1);
+      var getVar =Session.get('var3');
+      console.log(getVar);
       Router.go('/question2');
     },
-    'click .clickedButton4': function() {
+    'click .btn-four': function() {
       //if clicked, return the color
       Session.set('var4', 1);
+      var getVar =Session.get('var4');
+      console.log(getVar);
       Router.go('/question2');
     },
-    'click .clickedButton5': function() {
+    'click .btn-five': function() {
       Session.set('var5', 1);
+      var getVar =Session.get('var5');
+      console.log(getVar);
       Router.go('/question2');
     },
-    'click .clickedButton6': function() {
+    'click .btn-six': function() {
       Session.set('var6', 1);
+      var getVar =Session.get('var6');
+      console.log(getVar);
       Router.go('/question2');
     },
-    'click .clickedButton7': function() {
+    'click .btn-seven': function() {
       Session.set('var7', 1);
+      var getVar =Session.get('var7');
+      console.log(getVar);
       Router.go('/question2');
     },
-    'click .clickedButton8': function() {
+    'click .btn-eight': function() {
       Session.set('var8', 1);
+      var getVar =Session.get('var8');
+      console.log(getVar);
       Router.go('/question2');
     },
-    'click .clickedButton9': function() {
+    'click .btn-nine': function() {
       Session.set('var9', 1);
+      var getVar =Session.get('var9');
+      console.log(getVar);
       Router.go('/question2');
     }
 
