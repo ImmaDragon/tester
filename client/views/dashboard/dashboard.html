@@ -1,0 +1,113 @@
+<template name="dashboard">
+    {{> navigation}}
+
+    <div class="container-fluid">
+      <div class="row">
+        <!--sidebar-->
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Dashboard <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Patient Profiles</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Schedules</a></li>
+          </ul>
+        </div>
+        <!--end of sidebar-->
+
+        <!--top section-->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          
+        <div class="row patient-graph">
+          <div id="graph" class="col-md-8">
+            <h2>Patient Performance</h2>
+          </div>
+
+
+          <div id="weekly" class="col-md-4"><!--right column-->
+
+            <h4 class="sub-header">Least Active This Week</h4>
+              <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Name</th>
+                      <th>Performance</th>
+                      <th>Games Played</th>
+                      
+                    </tr>
+                  </thead>
+                
+                  <tbody>
+                    <tr>
+                      <td><i class="fa fa-arrow-down"></i></td>
+                      <td>Charlotte L.</td>
+                      <td>-40%</td>
+                      <td>4</td>
+                      
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-arrow-down"></i></td>
+                      <td>Anne M.</td>
+                      <td>-31%</td>
+                      <td>6</td>
+                      
+                    </tr>
+                   
+                  </tbody>
+              </table>
+
+              <h4 class="sub-header">Attention Score Alerts</h4>
+              
+
+              <table id="alerts" class="table table-striped">
+                
+                  <tbody>
+                    <tr>
+                      <td>Charlotte L.</td>
+                      <td><span>High Alert</span></td>
+                    </tr>
+                
+                    
+                  </tbody>
+              </table>
+
+          </div><!--end right column-->
+      </div><!--end row -->
+
+        <div style="clear:both;"></div>
+      <!--bottom tables-->
+          <h2 class="sub-header" id="patient-quick">Patient Quickview</h2>
+          <div class="table-responsive">
+        
+            <table id="tableID" class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Last Visited</th>
+                  <th>Games This Week</th>
+                  <th>Spatial</th>
+                  <th>Memory</th>
+                  <th>Attention</th>
+                </tr>
+              </thead>
+              <tbody>
+              {{#each patientData}}
+                <tr>
+                  <td>{{name}}</td>
+                  <td>{{formatDate date_created}}</td>
+                  <td><span>{{num_of_games}}</span></td>
+                  <td>{{spatial}}</td>
+                  <td>{{memory}}</td>
+                  <td>{{attention}}</td>
+                </tr>
+               {{/each}}
+              </tbody>
+            </table>
+          </div><!--end of table-->
+        <!--end of bottom section-->
+
+        </div>
+      </div>
+    </div><!--end of container fluid-->
+
+</template>

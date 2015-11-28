@@ -1,0 +1,40 @@
+<template name="layout">
+  {{#transitioner}}
+    {{> yield}}
+  {{/transitioner}}
+</template>
+
+<template name="home">
+<div class="question1">
+<div class="main-container">
+  <div class="game-container">
+    <i class="fa fa-calendar"></i>
+    <h1 class="todaysdate">
+      <strong>Please select a team photo</strong>
+    </h1>
+
+    <form class="form-inline">
+        <img src="/images/blue.png" class="btn-one">
+        <img src="/images/blue.png" class="btn-two">
+        <img src="/images/blue.png" class="btn-three">
+        <br>
+        <img src="/images/blue.png" class="btn-four">
+        <img src="/images/blue.png" class="btn-five">
+        <img src="/images/blue.png" class="btn-six">
+        <br>
+        <img src="/images/blue.png" class="btn-seven">
+        <img src="/images/blue.png" class="btn-eight">
+        <img src="/images/blue.png" class="btn-nine">
+    </form>
+
+    <div class="todaysdate">
+	    <button class="next-btn" id="question2">Next <i class="fa fa-angle-right"></i></button>
+	  </div>
+
+  </div>
+ </div>
+</div>
+</template>
+
+
+

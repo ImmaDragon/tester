@@ -1,0 +1,47 @@
+<template name="navigation">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span id="mind">MIND</span>ABILITY</a>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search Patient...">
+          </form>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bell">{{ no_of_alerts}}</i></a>
+                <ul class="dropdown-menu">
+                   {{#each patientAlert}}
+                       <li><a href="#">
+                            <i class="fa fa-warning"></i>
+                            {{name}} needs attention
+                      </a></li>
+                   {{/each}}
+                </ul>
+            </li>
+           
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> Dr Abhishek Narayan <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Add Patient</a></li>
+                  <li><a href="#">Search Patient</a></li>
+                  <li><a href="#">Edit Patient</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Account Settings</li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Log out</a></li>
+                </ul>
+              </li>
+          </ul>
+        </div>
+      </div>
+</nav>
+</template>
