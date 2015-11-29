@@ -24,3 +24,6 @@ random
 reactive-var
 reactive-dict
 u2622:persistent-session
+insecure
+autopublish
+adrianliaw:youtube-iframe-api
