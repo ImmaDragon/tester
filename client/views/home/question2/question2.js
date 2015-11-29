@@ -25,9 +25,24 @@ Template.question2.events({
 'click #question2': function(){
 console.log('next button pressed');
 Router.go('/question3');
+
+// Tracker.autorun(function () {
+//   var yt_id = 'AWpsOqh8q0M';
+//   if (yt.ready()) yt.player.loadVideoById(yt_id);
+// });
+
+
+
+
+
+
 }
 
 });
+
+
+
+
 
 
 

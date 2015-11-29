@@ -53,3 +53,18 @@ Router.route('/register', function(){
   this.render('register');
   this.layout(null);
 })
+
+Router.route('Profile', function(){
+  this.render('Profile');
+  this.layout('layout');
+})
+
+Router.route('/Position', function(){
+  this.render('Position');
+  this.layout('layout');
+})
+
+Router.route('/Music', function(){
+  this.render('Music');
+  this.layout('layout');
+})

@@ -6,9 +6,6 @@
   <div class="game-container">
     <i class="fa fa-calendar"></i>
     <h1 class="todaysdate">
-      <strong>This is a list of top teammember of that team</strong>
-      <br>
-      <strong>This is your favorite teammember</strong>
     </h1>
 
     <form class="form-inline">
@@ -17,13 +14,27 @@
         <img src="/images/blue.png" class="btn-two">
         <img src="/images/blue.png" class="btn-three">
         <br>
-        <p>favorite</p>
+        <p>your favorite</p>
         <img src="/images/blue.png" class="btn-four">
     </form>
 
+
+
+
+<!-- user clikcs on profile information a scroll pops up -->
+
     <div class="todaysdate">
-	    <button class="next-btn" id="question2">Next <i class="fa fa-angle-right"></i></button>
-	  </div>
+            <button class="next-btn" id="btn-one">Play {{name}}'s song<br><i class="fa fa-angle-right"></i></button>
+	      <button class="next-btn" id="btn-two">Position Information<br><i class="fa fa-angle-right"></i></button>
+	      <button class="next-btn" id="btn-three">Music Information  <i class="fa fa-angle-right"></i></button>
+            <button class="next-btn" id="btn-four">Profile Information<br><i class="fa fa-angle-right"></i></button>
+   </div>
+   <br>
+
+    <body>
+    <div id="player"></div>
+</body>
+
 
   </div>
  </div>
